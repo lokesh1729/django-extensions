@@ -23,7 +23,6 @@
 
 Django Extensions is a collection of custom extensions for the Django Framework.
 
-
 Getting Started
 ===============
 
@@ -31,6 +30,15 @@ The easiest way to figure out what Django Extensions are all about is to watch t
 `excellent screencast by Eric Holscher`__ (`watch the video on vimeo`__). In a couple
 minutes Eric walks you through a half a dozen command extensions. There is also a
 `short screencast on GoDjango`__ to help show you even more.
+
+
+What's added in this fork?
+===============
+
+Show project  urls except admin urls::
+      $ ./manage.py show_project_urls
+this will give all the urls except admin urls by matching regex `^((?!admin).)*$`
+
 
 
 Requirements
